@@ -17,11 +17,12 @@ style="width: 1080px";
 
 ---
 
-![](https://i.imgur.com/2jj1aZN.png)
+![](https://i.imgur.com/2ZTTW0X.png =600x)
 
 ---
 
-![](https://i.imgur.com/YekhxBa.jpg =300x)
+![](https://i.imgur.com/MSFZGKw.png =600x)
+
 
 ---
 
@@ -689,5 +690,4 @@ ext:php intitle:sh3ll
 [CTF](https://www.slideshare.net/HITCONGIRLS/hitcon-girls-ctf)
 
 [VM](http://www.digitimes.com.tw/tech/dt/n/shwnws.asp?cnlid=10&id=0000124512_q6m6fcij0cv9ds30t4krd)
-
 
