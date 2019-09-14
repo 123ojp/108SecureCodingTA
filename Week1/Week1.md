@@ -2,6 +2,7 @@
 
 title: 9/10 安全程式設計@RYan/舒晧
 lang: zh-tw
+tags: 安全程式設計,助教,
 
 
 ---
@@ -14,17 +15,25 @@ style="width: 1080px";
 
 # 9/10 安全程式設計@RYan/舒晧
 
+---
+
+![](https://i.imgur.com/oAI5jtL.png =600x)
 
 ---
 
-![](https://i.imgur.com/2ZTTW0X.png =600x)
+![](https://i.imgur.com/Qv9Gj6k.png =600x)
 
 ---
 
-![](https://i.imgur.com/MSFZGKw.png =600x)
+![](https://i.imgur.com/Fp6a9nT.png =600x)
 
 
 ---
+
+## [彈幕推廣 made by 123ojp](https://danmo.foxo.tw)
+
+---
+
 
 大綱 
 - 駭客精神
@@ -38,15 +47,15 @@ style="width: 1080px";
 ----
 
 
-### 這堂課你可以學到什麼
+## 這堂課你可以學到什麼
 
-- 各種demo
+- 各種 Demo
 - 駭客、資安是什麼?
 - 有什麼資源可以學習資安
 - 刑法的法條
-- 何謂CTF
-- CTF類型和賽制
-- 利用google查想要的資訊
+- 何謂 CTF
+- CTF 類型和賽制
+- 利用 Google 查想要的資訊
 
 ---
 
@@ -63,7 +72,7 @@ style="width: 1080px";
 
 ----
 
-#### 駭客種類
+### 駭客種類
 
 - 黑帽
 - 灰帽
@@ -79,7 +88,7 @@ style="width: 1080px";
 
 ----
 
-# try
+# Try
 
 ----
 
@@ -88,10 +97,10 @@ style="width: 1080px";
 
 ----
 
-#### 你可以怎麼開啟你的駭客之路
+### 你可以怎麼開啟你的駭客之路
 - ~~利用學長姊~~
 - 利用~~板手~~工具
-- 利用Google
+- 利用 Google
 - 讀書、論壇、新聞
 
 ----
@@ -142,7 +151,7 @@ style="width: 1080px";
 
 ---
 
-### CTF
+## CTF
 - Capture The Flag
 - 駭客的搶旗遊戲
 - 學習資訊安全攻擊/防禦的競賽
@@ -152,74 +161,75 @@ style="width: 1080px";
 
 ----
 
-### CTF題目的類型
+## CTF題目的類型
 
-- Reserve
-- Pwn
-- Web
-- Crypto 
-- Forensic
+- Reverse
+- Pwn (Binary Exploitation)
+- Web Security
+- Crypto
+- Forensics
 - Misc
 - 組合題
 
 ----
 
-#### Reserve
+### Reverse
 
 - 逆向⼯程 
 - 拆遊戲 
 - 拆程式 
-- 把組合語⾔變回C
-- 拆⼿機APP 
+- 把組合語⾔變回 C
+- 拆⼿機 APP 
 - 破解 
 - 繞過驗證
 
 ----
 
-#### Reserve
+### Reverse
 
 - 參賽者會拿到一個程式(binary)
-- 沒有完整原始法的前提分析
+- 沒有原始碼的前提下進行分析
 - 找到隱藏的資訊或改變程式流程
 - 反組譯程式
-```clike=
+```c=
 int a = 1;
 if (a == 87)
     getFlag();
 else
-    print("no flag");
+    printf("no flag");
 ```
 
 ----
 
-#### Reserve
+### Reverse
 
-- 靜態分析(Static Analysis) 
+- 靜態分析 (Static Analysis) 
     - 不執行程式，單純從反組譯出的程式碼、組合語言、程式流程圖、Global & Static data 等進行分析 
-- 動態分析(Dynamic Analysis)
-    - 直接執行程式，並根據當下程式執行狀況、Registers(暫存器)和Memory(記憶體)中的值進行分析 
+- 動態分析 (Dynamic Analysis)
+    - 直接執行程式，並根據當下程式執行狀況、Registers (暫存器)和 Memory (記憶體)中的值進行分析 
 
 ----
 
-#### Pwn
+### Pwn
 
-- 跟逆向(Reverse)相似，參賽者也會拿到一個程式(binary)
-- 與之不同在於目標是攻擊執行在對方主機的程式
+- 跟 Reverse 相似，參賽者也會拿到一個程式
+- 目標在於攻擊執行在對方主機的程式
 - 並取得對方的**主機控制權**
 
 ----
 
-#### Pwn
+### Pwn
 
-- 流程：分析(analysis)➔找尋漏洞(bug)➔撰寫攻擊程式(exploit)
-- bug
-    - Buffer overflow,…etc
-- exploit
-    - 利用程式漏洞進而獲得主機控制權(get shell) 
+- Flow
+    - 分析 ➔ 找尋漏洞 ➔ 撰寫攻擊程式
+- Vulnerability
+    - Buffer Overflow、Format String, …etc
+- Exploit
+    - 利用程式漏洞獲得主機控制權 (get shell) 
 
 ----
 
-#### Pwn
+### Pwn
 
 - 常用工具：IDA Pro
 - 人稱反組譯的倚天劍
@@ -228,15 +238,15 @@ else
 
 ----
 
-#### Pwn
+### Pwn
 
 - 常用工具：gdb
 - 除錯工具
-  ![](https://i.imgur.com/RRq12ht.png =600x)
+  ![](https://i.imgur.com/eQ681Z7.png =700x)
 
 ----
 
-#### Web Security
+### Web Security
 
 - 攻擊目標網頁
 - 獲取資訊或不合法登入或取得對方主機
@@ -244,24 +254,25 @@ else
 
 ----
 
-#### Web Security
-- 流程：分析網頁架構➔找尋可控輸入與漏洞➔攻擊
+### Web Security
+- 流程
+    - 分析網頁架構 ➔ 找尋可控輸入與漏洞 ➔ 攻擊
 - 分析網頁架構
     - 框架(framework)、撰寫語言之套性、作業系統
     - 舊版本已知漏洞、新版本未修補漏洞
 
 ----
 
-#### Web Security
+### Web Security
 - 找尋可控輸入與漏洞
-    - 網址(POST、GET)、使用者輸入(login)、檔案上傳
+    - 網址 (POST、GET)、使用者輸入 (Login)、<br>檔案上傳 (File Upload)
 - 攻擊
     - XSS, SQL Injection, File Inclusion, Command Injection, …etc
     - OWASP Top 10
 
 ----
 
-#### Web Security
+### Web Security
 
 - 常用工具：Burp Suite
 ![](https://i.imgur.com/QeZ6D37.png)
@@ -269,51 +280,51 @@ else
 
 ----
 
-#### Web Security
+### Web Security
 
-- 常用工具：開發者工具(F12)
+- 常用工具：開發者工具 (F12)
 - ~~真的他媽好用~~
 ![](https://i.imgur.com/tuJtolb.png)
 
 
 ----
 
-#### Crypto
+### Crypto
 
 - 密碼學
-- 參賽者得到密文，需要分析其加密方法並解出明文
+- 參賽者得到密文，分析其加密方法並解出明文
 
 ----
 
-#### Crypto
+### Crypto
 
 - 雜湊
     - SHA、MD5
 - 金鑰加密
-    - AES、DES(對稱性加密)
-    - RSA(非對稱性加密) 
+    - AES、DES (對稱性加密)
+    - RSA (非對稱性加密) 
 - 常用工具
     - 解密網站
     - OpenSSL
-    - rsatool
+    - RSAtool
 
 ----
 
-#### Forensic
+### Forensics
 
-- 資訊隱藏學(Steganography)
+- 資訊隱藏學 (Steganography)
 - 參賽者得到一個任何格式的檔案，可能是文字檔、圖檔、 音訊檔、網路封包等，分析並找出隱藏的資訊 
 
 
 ----
 
-#### Forensic
+### Forensics
 ![](https://i.imgur.com/rnE6IUZ.png) ![](https://i.imgur.com/EF4Fd1J.png)
 
 
 ----
 
-#### Forensic
+### Forensics
 - 數位鑑識 
 - 看Log 
 - 看記憶體
@@ -323,13 +334,13 @@ else
 
 ----
 
-#### Misc 
+### Misc 
 
 什麼都有可能
 雜七雜八無法分類
 通常就會算成這個
 
-#### 組合題
+### 組合題
 
 - Crypto＋Pwn 
 - Web ＋ Pwn
@@ -337,7 +348,7 @@ else
 
 ----
 
-#### CTF賽制
+## CTF賽制
 
 - Jeopardy
 - Attack & Defense
@@ -346,7 +357,7 @@ else
 
 ----
 
-#### Jeopardy
+### Jeopardy
 
 - 透過主辦方出題目
 - 各種類型的題目，每種類型可能會有數道題目
@@ -355,28 +366,28 @@ else
 
 ----
 
-#### Attack & Defense
+### Attack & Defense
 
 - 比賽方式
     - 各隊參賽者有自己的主機
     - 主機上執行著各種有漏洞的服務
-    - 攻擊他隊的服務(exploit)
-    - 防禦自己的服務(patch)修補漏洞
+    - 攻擊他隊的服務 (exploit)
+    - 防禦自己的服務 (patch) 修補漏洞
 
 ----
 
-#### Attack & Defense
+### Attack & Defense
 
 - 分析主機上的服務，找到漏洞利用方式
 - 撰寫攻擊程式，入侵其他參賽者維護的主機
-- 修補自己主機上的漏洞，防止他人偷取你的Flag
-- 偷取Flag遞交到主辦單位記分板可獲得額外分數
-    - 如果成功守護自己的Flag也會有分數
-    - 如果自己的Flag被偷走則拿不到分數
+- 修補自己主機上的漏洞，防止他人偷取你的 Flag
+- 偷取 Flag 遞交到主辦單位記分板可獲得額外分數
+    - 如果成功守護自己的 Flag 也會有分數
+    - 如果自己的 Flag 被偷走則拿不到分數
 
 ----
 
-#### Attack & Defense
+### Attack & Defense
 
 - 如果我把自己的主機關機，別人打不到我!
     - 不行，主辦方會不定檢查服務是正常
@@ -384,7 +395,7 @@ else
 
 ----
 
-#### King of the Hill
+### King of the Hill
 
 - 每個隊伍一開始不會擁有主機，而要把主辦方提供的主機打下來然後寫入自己的Flag（例如：改首頁）
 - 參賽者要守護已經打下來的主機，不被其他隊伍搶走，每個回合依照擁有主機的數量進行加分。
@@ -395,7 +406,7 @@ else
 
 ----
 
-#### 著名CTF比賽
+### 著名CTF比賽
 
 - 初學者
     - CSAW
@@ -405,7 +416,7 @@ else
 
 ----
 
-#### 著名CTF比賽
+### 著名CTF比賽
 
 - 進階
     - PlaidCTF
@@ -421,7 +432,7 @@ else
 
 ----
 
-#### 著名CTF比賽
+### 著名CTF比賽
 
 - 進階
     - XCTF
@@ -437,7 +448,7 @@ else
 
 ----
 
-#### 著名CTF比賽
+### 著名CTF比賽
 
 - 特殊
     - WCTF
@@ -451,7 +462,7 @@ else
 
 ----
 
-#### 學習CTF
+## 學習CTF
 
 - CTF TIME (https://ctftime.org/)
 - GitHub - CTFs (https://github.com/ctfs) 
@@ -469,7 +480,7 @@ else
 
 http://lmgtfy.com/?q=google
 
-- 利用Google搜尋功能，從網路中找尋機敏資料
+- 利用 Google 搜尋功能，從網路中找尋機敏資料
 - 名冊、機敏資訊、曾經被找到的漏洞網頁或原始碼
 - 實用度：★★★★★
 - 停止當一個伸手牌
@@ -580,7 +591,6 @@ inurl:"ViewerFrame?Mode="
 ```
 ext:php intitle:sh3ll
 ```
--  噓
 
 
 ----
@@ -601,6 +611,18 @@ ext:php intitle:sh3ll
 #### zoomeye(鍾馗之眼)
  - https://www.zoomeye.org/
  - 同上，基本上免費
+
+---
+
+### 駭客用的搜尋網站
+#### virustotal
+ - https://virustotal.com
+ - 子網域搜尋
+ - 歷史ip
+
+#### crt.sh
+- https://crt.sh
+- 登記 https 的網域
 
 ---
 
@@ -635,8 +657,11 @@ ext:php intitle:sh3ll
 
 ---
 
+### 科普加退選第一天 學校網頁連不上
+- `.edu.tw`偷換憑證 沒跟`.tw`說
 
 
+---
 
 ### 虛擬機(Virtual Machine)
 
@@ -673,7 +698,6 @@ ext:php intitle:sh3ll
 - 以Ubuntu為例子
 [虛擬機架設](https://hackmd.io/p/SkuIxUro-#/)
 
-
 ---
 
 ## 謝謝大家
@@ -681,7 +705,6 @@ ext:php intitle:sh3ll
 ---
 
 ![](https://i.imgur.com/CFNtDY0.png)
-
 
 ---
 
